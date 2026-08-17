@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Votes, VoteType } from '../../types/votes';
-import CareInfo from '../CareInfo/CareInfo';
+import CafeInfo from '../CafeInfo/CafeInfo';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className={css.app}>
-      <CareInfo />
+      <CafeInfo />
       <VoteOptions
         onVote={handleVote}
         onReset={resetVotes}
